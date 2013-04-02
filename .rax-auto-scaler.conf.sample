@@ -1,0 +1,19 @@
+{
+"username" : "USERNAME"
+, "apikey" : "API_KEY"
+, "servers" : {
+    "web-servers-for-main-site" : {   <--- Any name to describe this group of servers
+      "server_tag" : [ "web-prod" ]   <--- A list of servers or the prefix for the server names
+      , "clone_slave_tag" : "web-prod-03"  <--- The exact server name which will be cloned as a "base" image
+      , "load_balancer" : "lb-web-prod"  <--- Name of the load balancer that will be created and/or used
+      , "min_servers" : 3   <--- The minimum number of servers to maintain
+      , "min_loadavg" : 2   <--- If the loadavg drops below this level, start deleting "spare" servers
+      , "max_loadavg" : 2.5   <--- If the loadavg goes above this level, start building servers from "base" image
+      , "load_watch_time" : 10   <--- The time to wait to see if the load changes after min/max loadavg is hit
+      , "interval" : 5   <--- How often to poll servers to get their load average
+      , "build_server_increment" : 2   <--- How many "spare" servers to add when scaling up
+      , "drop_server_decrement" : 1   <--- How many "spare" servers to delete when scaling down
+    }
+  }
+}
+
