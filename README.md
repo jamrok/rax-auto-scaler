@@ -3,7 +3,7 @@ RAX-AUTO-SCALER
 ################################################################################
 Installation:
 ################################################################################
-Simply download, install the packages listed below, create and edit the config file and run the program.
+Simply download, install the packages listed in the [Requirements] section below, create and edit the config file and run the program.
 
 To download, execute the following at the command line:
     
@@ -14,7 +14,7 @@ To download, execute the following at the command line:
 
 Edit the config file [ $HOME/.rax-auto-scaler.conf ] in your favorite text editor.
 
-Execute the program:
+Execute the program (after installing python packages [ pyrax ] and [ python-paramiko ]):
 
     ./rax-auto-scaler.py
 OR 
