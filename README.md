@@ -5,6 +5,22 @@ Installation:
 ################################################################################
 Simply download, install the packages listed below, create and edit the config file and run the program.
 
+To download, execute the following at the command line:
+    
+    wget https://raw.github.com/jamrok/rax-auto-scaler/master/rax-auto-scaler.py -O $HOME/rax-auto-scaler.py
+    chmod +x $HOME/rax-auto-scaler.py
+    
+    wget https://raw.github.com/jamrok/rax-auto-scaler/master/.rax-auto-scaler.conf -O $HOME/.rax-auto-scaler.conf
+
+Edit the config file [ $HOME/.rax-auto-scaler.conf ] in your favorite text editor.
+
+Execute the program:
+
+    ./rax-auto-scaler.py
+OR 
+    
+    python rax-auto-scaler.py
+
 ################################################################################
 Summary:
 ################################################################################
